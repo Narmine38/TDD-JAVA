@@ -1,3 +1,5 @@
+package org.example;
+
 public class Task {
    private int identifiant;
    private String description;
@@ -7,6 +9,11 @@ public class Task {
         this.identifiant = identifiant;
         this.description = description;
         this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        return identifiant +" "+description+" "+state;
     }
 
     public int getIdentifiant() {
